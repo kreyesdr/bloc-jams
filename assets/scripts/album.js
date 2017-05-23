@@ -28,6 +28,22 @@ var albumMarconi = {
     ]
 };
 
+var albumKenny = {
+  title: 'Brazilian Nights',
+  artist: 'Kenny G',
+  label: 'Concord Records',
+  year: '2015',
+  albumArtUrl: 'assets/images/Brazilian_Nights_Album_Cover.jpg',
+  songs: [
+    { title: 'Bossa Antigua', duration: '3:48' },
+    { title: 'Corcovado (Quiet Nights Of Quiet Stars)', duration: '7:30' },
+    { title: 'Bossa Réal', duration: '7:36' },
+    { title: 'Brazilian Nights', duration: '6:32' },
+    { title: 'April Rain', duration: '6:48' },
+    { title: 'Menina Moca', duration: '5:57' }
+  ]
+}
+
 var createSongRow = function(songNumber, songName, songLength) {
      var template =
         '<tr class="album-view-song-item">'
