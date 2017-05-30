@@ -33,7 +33,7 @@ var albumKenny = {
   artist: 'Kenny G',
   label: 'Concord Records',
   year: '2015',
-  albumArtUrl: 'assets/images/Brazilian_Nights_Album_Cover.jpg',
+  albumArtUrl: 'assets/images/bloc_jams_kenny_g.jpg',
   songs: [
     { title: 'Bossa Antigua', duration: '3:48' },
     { title: 'Corcovado (Quiet Nights Of Quiet Stars)', duration: '7:30' },
@@ -76,5 +76,5 @@ var createSongRow = function(songNumber, songName, songLength) {
  };
 
 window.onload = function() {
-  setCurrentAlbum(albumPicasso);
+  setCurrentAlbum(albumKenny);
 };
