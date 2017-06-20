@@ -179,26 +179,9 @@ var currentSoundFile = null;
 var currentVolume = 80;
 var $previousButton = $('.main-controls .previous');
 var $nextButton = $('.main-controls .next');
-var $holdControl = $('.main-controls .play-pause')
 
 $(document).ready(function () {
   setCurrentAlbum(albumPicasso);
-
-var $previousSongNumberCell = getSongNumberCell(currentlyPlayingSongNumber);
-
-  $holdControl.click(function() {
-    if (currentlyPlayingSongNumber) {
-      if (currentSoundFile.isPaused()) {
-        $previousSongNumberCell.html(pauseButtonTemplate);
-        $(this).html(playerBarPauseButton);
-        currentSoundFile.play();
-      } else {
-        $(this).html(playerBarPlayButton);
-        currentSoundFile.pause();
-      }
-  	}
-  })
-
   $previousButton.click(previousSong);
   $nextButton.click(nextSong);
 })
