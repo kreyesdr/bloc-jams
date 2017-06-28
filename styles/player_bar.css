@@ -119,10 +119,9 @@ player-bar .currently-playing .song-name,
   margin-top: -0.25rem;
   border-radius: 50%;
   cursor: pointer;
-  transition: width 100ms ease-in-out,
-              height 100ms ease-in-out,
-              margin-top 100ms ease-in-out,
-              margin-left 100ms ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .seek-bar:hover .thumb {
